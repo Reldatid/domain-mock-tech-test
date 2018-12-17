@@ -1,23 +1,21 @@
 <%= form_for @employee do |f|%>
-<fieldset>
-  <%= f.text_field :first_name %>
+<div id="form-grid">
+
   <%= f.label :first_name %>
-</fieldset>
-<fieldset>
-  <%= f.text_field :last_name %>
+  <%= f.text_field :first_name %>
+
   <%= f.label :last_name %>
-</fieldset>
-<fieldset>
-  <%= f.text_field :job_title %>
+  <%= f.text_field :last_name %>
+
   <%= f.label :job_title %>
-</fieldset>
-<fieldset>
-  <%= f.text_field :salary %>
+  <%= f.text_field :job_title %>
+
   <%= f.label :salary %>
-</fieldset>
-<fieldset>
-  <%= f.text_area :notes %>
+  <%= f.text_field :salary %>
+
   <%= f.label :notes%>
-</fieldset>
-<%= f.submit %>
+  <%= f.text_area :notes %>
+  
+</div>
+  <%= f.submit %>
 <% end %>

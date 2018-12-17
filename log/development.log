@@ -955,3 +955,74 @@ Processing by EmployeesController#index as HTML
 Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:50:58 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (5.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 189ms (Views: 156.3ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:51:21 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 79ms (Views: 76.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:51:36 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2018-12-18 01:51:47 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (2.1ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (7.1ms)
+  Rendered employees/edit.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 46ms (Views: 38.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2018-12-18 01:54:05 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (1.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (9.1ms)
+  Rendered employees/edit.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 81ms (Views: 76.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2018-12-18 01:54:17 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (3.7ms)
+  Rendered employees/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 42ms (Views: 36.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2018-12-18 01:54:57 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (3.5ms)
+  Rendered employees/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.4ms)
+
+
