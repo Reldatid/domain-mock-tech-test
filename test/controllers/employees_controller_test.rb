@@ -31,8 +31,8 @@ class EmployeesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get destroy" do
-    get employees_destroy_url
+  test "should get delete" do
+    get employees_delete_url
     assert_response :success
   end
 

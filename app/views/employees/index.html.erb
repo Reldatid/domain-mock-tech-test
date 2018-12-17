@@ -1,7 +1,21 @@
-<ul>
+<h1>All Employees</h1>
+<%= link_to 'New Employee', new_employee_path %>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Job Title</th>
+    <th>Actions</th>
+  </tr>
 <% @employees.each do |employee|%>
-  <li>
-    <%= employee.first_name %>
-  </li>
+  <tr>
+    <td class="first-name"><%= employee.first_name %></td>
+    <td class="last-name"><%= employee.last_name %></td>
+    <td class="job-title"><%= employee.job_title %></td>
+    <td class="calls-to-action">
+      <%= link_to 'Edit', edit_employee_path(employee)%>
+      <%= link_to 'Delete',url_for(action: :destroy, id: employee.id),method: :delete, data: {confirm: "Are you sure?"} %>
+    </td>
+  </tr>
 <% end %>
-</ul>
+</table>

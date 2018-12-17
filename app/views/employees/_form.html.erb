@@ -1,0 +1,23 @@
+<%= form_for @employee do |f|%>
+<fieldset>
+  <%= f.text_field :first_name %>
+  <%= f.label :first_name %>
+</fieldset>
+<fieldset>
+  <%= f.text_field :last_name %>
+  <%= f.label :last_name %>
+</fieldset>
+<fieldset>
+  <%= f.text_field :job_title %>
+  <%= f.label :job_title %>
+</fieldset>
+<fieldset>
+  <%= f.text_field :salary %>
+  <%= f.label :salary %>
+</fieldset>
+<fieldset>
+  <%= f.text_area :notes %>
+  <%= f.label :notes%>
+</fieldset>
+<%= f.submit %>
+<% end %>

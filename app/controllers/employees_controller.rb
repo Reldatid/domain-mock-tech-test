@@ -1,13 +1,16 @@
 class EmployeesController < ApplicationController
+
   def index
     @employees = Employee.all
   end
 
-  def create
+  def new
     @employee = Employee.new
   end
 
-  def new
+  def create
+    Employee.create employee_params
+    redirect_to employees_path
   end
 
   def edit
@@ -23,7 +26,15 @@ class EmployeesController < ApplicationController
   end
 
   def destroy
-    employee = Employee.find params[:id]
-    employee.destroy
+    @employee = Employee.find params[:id]
+    @employee.destroy
+    redirect_to employees_path
   end
+
+  private
+
+  def employee_params
+    params.require(:employee).permit(:first_name, :last_name, :job_title, :salary, :notes)
+  end
+
 end
