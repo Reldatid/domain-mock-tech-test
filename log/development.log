@@ -1026,3 +1026,195 @@ Processing by EmployeesController#edit as HTML
 Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.4ms)
 
 
+Started PATCH "/employees/1" for 127.0.0.1 at 2018-12-18 01:55:46 +1100
+Processing by EmployeesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FUXnAeMCy3JI24VI8SgWRhGGeGqB3fqCuHkQ8FsraDMtkGDfaHd3hWEqiNDNniah7IU2Pk27GnNo3M6ZDIYIJw==", "employee"=>{"first_name"=>"Jonathan", "last_name"=>"Odlum", "job_title"=>"Junior Web Developer", "salary"=>"69999.99", "notes"=>"best employee ever, should get a raise."}, "commit"=>"Update Employee", "id"=>"1"}
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:21
+  Rendering employees/update.html.erb within layouts/application
+  Rendered employees/update.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 27.8ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/employees/1" for 127.0.0.1 at 2018-12-18 01:57:17 +1100
+Processing by EmployeesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FUXnAeMCy3JI24VI8SgWRhGGeGqB3fqCuHkQ8FsraDMtkGDfaHd3hWEqiNDNniah7IU2Pk27GnNo3M6ZDIYIJw==", "employee"=>{"first_name"=>"Jonathan", "last_name"=>"Odlum", "job_title"=>"Junior Web Developer", "salary"=>"69999.99", "notes"=>"best employee ever, should get a raise."}, "commit"=>"Update Employee", "id"=>"1"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:22
+Redirected to http://localhost:3000/employees/1
+Completed 302 Found in 17ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2018-12-18 01:57:18 +1100
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:27
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/employees/1" for 127.0.0.1 at 2018-12-18 01:57:22 +1100
+Processing by EmployeesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FUXnAeMCy3JI24VI8SgWRhGGeGqB3fqCuHkQ8FsraDMtkGDfaHd3hWEqiNDNniah7IU2Pk27GnNo3M6ZDIYIJw==", "employee"=>{"first_name"=>"Jonathan", "last_name"=>"Odlum", "job_title"=>"Junior Web Developer", "salary"=>"69999.99", "notes"=>"best employee ever, should get a raise."}, "commit"=>"Update Employee", "id"=>"1"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:21
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:22
+Redirected to http://localhost:3000/employees/1
+Completed 302 Found in 6ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2018-12-18 01:57:22 +1100
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:27
+  Rendering employees/show.html.erb within layouts/application
+  Rendered employees/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/employees/1" for 127.0.0.1 at 2018-12-18 01:57:36 +1100
+Processing by EmployeesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FUXnAeMCy3JI24VI8SgWRhGGeGqB3fqCuHkQ8FsraDMtkGDfaHd3hWEqiNDNniah7IU2Pk27GnNo3M6ZDIYIJw==", "employee"=>{"first_name"=>"Jonathan", "last_name"=>"Odlum", "job_title"=>"Junior Web Developer", "salary"=>"69999.99", "notes"=>"best employee ever, should get a raise."}, "commit"=>"Update Employee", "id"=>"1"}
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:22
+Redirected to http://localhost:3000/employees
+Completed 302 Found in 26ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:57:36 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 25ms (Views: 22.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2018-12-18 01:57:47 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (3.0ms)
+  Rendered employees/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/employees/1" for 127.0.0.1 at 2018-12-18 01:57:49 +1100
+Processing by EmployeesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5B5Y6bOwuEKlvts2WSMuOTX56Z79d8VbNiqkIXGlhifcy983OMUEtYxP1q5llR7eyPqnyjERJarmj3pIJgjmMw==", "employee"=>{"first_name"=>"Jonathan", "last_name"=>"Odlum", "job_title"=>"Junior Web Developer", "salary"=>"69999.99", "notes"=>"best employee ever, should get a raise."}, "commit"=>"Update Employee", "id"=>"1"}
+  [1m[36mEmployee Load (0.7ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:22
+Redirected to http://localhost:3000/employees
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:57:49 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2018-12-18 01:57:50 +1100
+Processing by EmployeesController#new as HTML
+  Rendering employees/new.html.erb within layouts/application
+  Rendered employees/_form.html.erb (4.7ms)
+  Rendered employees/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/employees" for 127.0.0.1 at 2018-12-18 01:58:11 +1100
+Processing by EmployeesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fQ9/pvuTZqhU1t04hr7dcAZHYWOcvM9DVFKbp8ncfhpF2vh4cObaX30n0KC6CO2X+0QvN1DaL7KE90XOnnEeDg==", "employee"=>{"first_name"=>"Michael", "last_name"=>"Pooper", "job_title"=>"Shit", "salary"=>"2524141", "notes"=>"Quite an alright bloke"}, "commit"=>"Create Employee"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/employees_controller.rb:12
+  [1m[36mEmployee Create (3.1ms)[0m  [1m[32mINSERT INTO "employees" ("first_name", "last_name", "job_title", "salary", "notes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Michael"], ["last_name", "Pooper"], ["job_title", "Shit"], ["salary", 2524141.0], ["notes", "Quite an alright bloke"], ["created_at", "2018-12-17 14:58:11.040905"], ["updated_at", "2018-12-17 14:58:11.040905"]]
+  ↳ app/controllers/employees_controller.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/employees_controller.rb:12
+Redirected to http://localhost:3000/employees
+Completed 302 Found in 9ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:58:11 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/employees/6/edit" for 127.0.0.1 at 2018-12-18 01:58:55 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (5.0ms)
+  Rendered employees/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:59:29 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2018-12-18 01:59:31 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (4.5ms)
+  Rendered employees/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2018-12-18 01:59:40 +1100
+Processing by EmployeesController#index as HTML
+  Rendering employees/index.html.erb within layouts/application
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT "employees".* FROM "employees"[0m
+  ↳ app/views/employees/index.html.erb:10
+  Rendered employees/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/employees/1/edit" for 127.0.0.1 at 2018-12-18 01:59:42 +1100
+Processing by EmployeesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmployee Load (0.3ms)[0m  [1m[34mSELECT  "employees".* FROM "employees" WHERE "employees"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/employees_controller.rb:17
+  Rendering employees/edit.html.erb within layouts/application
+  Rendered employees/_form.html.erb (3.8ms)
+  Rendered employees/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
