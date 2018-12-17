@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple DB with one table requested as a tech-test for a mock interview with Domain.
 
-Things you may want to cover:
+It uses Ruby on Rails with a postgresql database, so to run this locally you'll need to have both.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To get this running locally you should navigate to the root directory of the project in the command line and run the following commands:
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails s
