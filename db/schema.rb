@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 2018_12_15_032010) do
   enable_extension "plpgsql"
 
   create_table "employees", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "job_title"
+    t.string "first_name", limit: 100
+    t.string "last_name", limit: 100
+    t.string "job_title", limit: 100
     t.float "salary"
     t.text "notes"
     t.datetime "created_at", null: false

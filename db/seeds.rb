@@ -10,6 +10,11 @@
 Employee.destroy_all
 
 
-puts 'seeding users'
+puts 'seeding Employees'
 
 Employee.create first_name: "Jonathan", last_name: "Odlum", job_title: "Junior Web Developer", salary: 69999.99, notes: "best employee ever, should get a raise."
+Employee.create first_name: "Frank", last_name: "Sinatra", job_title: "Bard", salary: 70000.00, notes: "Should always be paid more than Jonathan."
+Employee.create first_name: "Jonathon", last_name: "Hearn", job_title: "Schoolyard Bully", salary: 50.00, notes: "Favourite tactic: windmill arms"
+Employee.create first_name: "Michael", last_name: "Cincinato", job_title: "Manager", salary: 10000, notes: "Steals friends and poor attitude to work."
+
+puts "created #{Employee.all.length} Employees."

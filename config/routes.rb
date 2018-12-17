@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   # get 'employees/show'
   # get 'employees/destroy'
 
+  root to: "employees#index"
+
   resources :employees
 
 end
